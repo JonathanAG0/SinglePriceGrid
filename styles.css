@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital@1&display=swap');
+
+:root {
+    --main-one: hsl(179, 62%, 43%);
+    --main-two: hsl(71, 73%, 54%);
+    --main-three: hsl(204, 43%, 93%);
+    --main-four: hsl(218, 22%, 67%);
+    --main-five: hsl(179, 47%, 51%);
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Karla', sans-serif;
+    font-style: normal;
+    word-spacing: 1px;
+    background: var(--main-three);
+    
+}
+
+.white-sec {
+    background: white;
+    padding: 1rem;
+    width: 45rem;
+    color: var(--main-one);
+    
+}
+.white-sec>h1 {
+    font-size: 1.8rem;
+}
+.white-sec>h2 {
+    color: var(--main-two);
+    font-size: 1.5rem;
+}
+.white-sec>p {
+    color: var(--main-four);
+    font-size: 1.3rem;
+    line-height: 2;
+}
+
+.dark-cyan {
+    background: var(--main-one);
+    padding: 1rem;
+    color: var(--main-three);
+    line-height: 1;
+    
+}
+.dark-cyan>h1{
+    margin-left: 2rem;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+.dark-cyan>p{
+    font-size: 1.1rem;
+    font-weight: 300;
+    margin-left: 2rem;
+    margin-bottom: 3rem;
+    
+}
+.dark-cyan>span{
+    margin-left: 2rem;
+    font-size: 2rem;
+    font-weight: 800;
+
+}
+#month {
+    margin-left: 1rem;
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.432);
+    font-weight: 300;
+    
+}
+.btn {
+ background-color: var(--main-two);
+ margin-left: 1.8rem;
+ box-shadow: 90px;
+ padding: 0.8rem 6rem;
+ border-radius: 5px 5px 5px 5px;
+
+}
+.btn-sign-up{
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--main-three);
+    
+}
+.btn.btn-sign-up:hover{
+    background-color: hsl(71, 73%, 40%) ;
+}
+.light-cyan {
+    background: var(--main-five);
+    padding: 1rem;
+    color: var(--main-three);
+}
+.light-cyan>h1 {
+    margin-left: 2rem;
+}
+
+ul {
+    list-style: none;
+}
+.container-grid {
+    margin-top: 10rem;
+    margin-left: 15rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    padding: 1rem;
+    
+}
+.grid-col-span-3{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+.grid-col-span-2 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+.grid-col-span-1 {
+    grid-column-start: 1;
+    grid-column-end: 1;
+}
+
+@media (max-width: 40rem){
+    .container-grid {
+        grid-template-columns: repeat(3, 1fr);
+        margin-left: -2rem;
+        margin-top: -2rem;
+        
+    }
+    .grid-col-span-3 {
+        grid-column: 1 / 2;
+    }
+    .grid-col-span-2 {
+        grid-column: 1 / 2;
+    }
+    .grid-col-span-3 {
+        grid-column: 1 / 2;
+    }
+}
